@@ -1,0 +1,75 @@
+.productTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+  background: #fff;
+  box-shadow: 0 1px 6px #0001;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.productTable th,
+.productTable td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.productTable th {
+  background: #f8f8fc;
+  color: #23395d;
+  font-weight: 600;
+}
+
+.productTable tr:last-child td {
+  border-bottom: none;
+}
+
+.thumbnail {
+  display: block;
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.detailsButton {
+  padding: 6px 18px;
+  border: none;
+  border-radius: 5px;
+  background: #3498db;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.detailsButton:hover {
+  background: #217dbb;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.pageBtn {
+  padding: 6px 14px;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  background: #f7f7fb;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.pageBtn:disabled {
+  background: #f2f2f2;
+  color: #aaa;
+  cursor: not-allowed;
+}
+.pageInfo {
+  min-width: 80px;
+  text-align: center;
+  color: #333;
+}

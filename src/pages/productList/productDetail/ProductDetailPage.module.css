@@ -1,0 +1,151 @@
+.detailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 40px;
+  background: #fafbfc;
+  min-height: 80vh;
+}
+
+.imagesSection {
+  flex: 1;
+  min-width: 320px;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productImage {
+  width: 100%;
+  max-width: 380px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  margin-bottom: 18px;
+}
+
+.imagesRow {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.subImage {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: 1px solid #eee;
+  transition: border 0.2s;
+  background: #fff;
+}
+.subImage:hover {
+  border: 1.5px solid #3498db;
+}
+
+.infoSection {
+  flex: 2;
+  min-width: 320px;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px #0001;
+  padding: 32px;
+}
+
+.productName {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0 0 8px 0;
+  color: #23395d;
+}
+
+.price {
+  color: #e74c3c;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.stock {
+  font-size: 1rem;
+  margin-bottom: 6px;
+  color: #298d50;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.rating {
+  font-size: 1rem;
+  color: #f39c12;
+}
+
+.reviews {
+  margin-top: 8px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.reviews ul {
+  padding-left: 18px;
+  margin: 4px 0;
+}
+.reviewRating {
+  color: #f39c12;
+  margin-right: 4px;
+  font-weight: bold;
+}
+.reviewComment {
+  color: #555;
+}
+
+.addToCartBtn {
+  margin-top: 18px;
+  padding: 10px 32px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.addToCartBtn:hover {
+  background: #217dbb;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  margin: 32px;
+}
+
+.notification {
+  position: fixed;
+  top: 48px;
+  right: 40px;
+  padding: 16px 32px;
+  background: #27ae60;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px #0002;
+  z-index: 1000;
+  animation: fadeInOut 2s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-20px);}
+  10% { opacity: 1; transform: translateY(0);}
+  90% { opacity: 1; transform: translateY(0);}
+  100% { opacity: 0; transform: translateY(-20px);}
+}

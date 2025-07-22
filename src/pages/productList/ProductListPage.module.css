@@ -1,0 +1,40 @@
+.topBar {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.categorySelect {
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 160px;
+  background: #fff;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 8px 16px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.searchBtn {
+  padding: 8px 24px;
+  font-size: 1rem;
+  border-radius: 6px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.searchBtn:hover {
+  background: #217dbb;
+}
