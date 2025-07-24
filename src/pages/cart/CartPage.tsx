@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import CartItem from "../../components/CartItem";
 import styles from "./CartPage.module.css";
 import { type ProductCardDTO, ProductController } from "../../API/controller/productsController";
-import { useNavigate } from "react-router-dom";
 
 type CartItemData = {
   id: number;
@@ -69,7 +68,7 @@ const CartPage: React.FC = () => {
     );
 
   const total = mergedItems.reduce(
-    (sum, item) => sum + (item.price * item.quantity),
+    (sum, item) => sum + (item.price ? item.price * item.quantity : 0),
     0
   );
 

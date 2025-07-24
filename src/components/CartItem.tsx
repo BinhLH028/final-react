@@ -4,9 +4,9 @@ import styles from "./CartItem.module.css";
 type Props = {
   item: {
     id: number;
-    title: string;
-    price: number;
-    thumbnail: string;
+    title?: string;
+    price?: number;
+    thumbnail?: string;
     quantity: number;
   };
   onIncrease: () => void;
@@ -47,7 +47,7 @@ const CartItem: React.FC<Props> = ({ item, onIncrease, onDecrease, onRemove }) =
         </button>
       </div>
       <div className={styles.itemTotal}>
-        Total: ${(item.price * item.quantity).toFixed(2)}
+        Total: ${(item.price ? item.price * item.quantity : 0).toFixed(2)}
       </div>
     </div>
   </div>

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { User, Mail, Hash, Calendar, ArrowLeft } from 'lucide-react';
+import { User, Mail, Hash, ArrowLeft } from 'lucide-react';
 import styles from './UserProfile.module.css';
 
 interface UserData {

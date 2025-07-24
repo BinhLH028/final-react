@@ -1,4 +1,4 @@
-import React, { useEffect, useState, us } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./ProductListPage.module.css";
 import { type ProductCategoryDTO, type ProductCardDTO, ProductController } from "../../API/controller/productsController";
 import ProductTable from "./component/ProductTable";
